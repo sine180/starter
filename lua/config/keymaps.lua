@@ -35,5 +35,7 @@ if vim.g.vscode then
   map("n", "gr", call("editor.action.goToReferences"), "VSCode goto references")
   map("n", "<leader>rn", call("editor.action.rename"), "VSCode rename")
   map({ "n", "x" }, "<leader>ca", call("editor.action.quickFix"), "VSCode code action")
+  map("n", "<leader>yr", call("workbench.action.files.copyRelativePathOfActiveFile"), "VSCode copy relative path")
+  map("n", "<leader>yp", call("workbench.action.files.copyPathOfActiveFile"), "VSCode copy file path")
 
 end
